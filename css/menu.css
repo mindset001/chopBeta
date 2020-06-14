@@ -1,5 +1,5 @@
 #landing-page{
-    background: url('./images/landingPage4.jpg') center center;
+    background: url('../images/landingPage4.jpg') center center;
     /* background-image: url('/images/chopbeta3.png'); */
     background-size: cover;
     height: 100vh;
