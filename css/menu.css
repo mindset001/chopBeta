@@ -1,0 +1,135 @@
+#landing-page{
+    background: url('/images/landingPage4.jpg') center center;
+    /* background-image: url('/images/chopbeta3.png'); */
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    /* background: linear-gradient(#141e30, #243b55); */
+}
+
+.nav-slider{
+    padding: 15px;
+    cursor: pointer;
+}
+
+.line{
+    background: #eee;
+    margin: 5px;
+    width: 30px;
+    padding: 2px;
+}
+
+.line:nth-child(1) {
+    margin-top: 0;
+}
+
+/* nav-slider-section */
+.nav-slider-section{
+    background: rgb(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+}
+
+.close-nav-slider{
+    border: none;
+    outline: none;
+    float: right;
+    background: transparent;
+    color: #f1c40f;
+    font-size: 1.5em;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.nav-links-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+
+.nav-links-container li{
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.5em;
+
+}
+
+.openNav{
+    animation: openNav 0.5s forwards;
+}
+
+.closeNav{
+    animation: closeNav 0.5s forwards;    
+}
+
+@keyframes openNav{
+    100%{
+        transform: translateX(0%)
+    }
+}
+
+@keyframes closeNav{
+    0%{
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.tabs-container{
+    width: 90%;
+    /* border: 1px solid #eee; */
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.tabHeader{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: black;
+    padding: 6px 12px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.active-tab {
+    border: 1px solid #000 !important;
+    border-bottom: none !important;
+}
+
+.tabSection{
+    border: 1px solid #000;
+    padding: 15px;
+}
+
+.hide-tab{
+    display: none;
+}
+
+.show-tab{
+    display: block;
+}
+
+#menu{
+    /* background: #d1d515; */
+    color: purple;
+}
+
+.menu-title{
+   color: purple;
+    text-align: center;
+    padding: 25px;
+    font-size: 2em;
+
