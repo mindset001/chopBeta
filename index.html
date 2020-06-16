@@ -1,139 +1,565 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>chopBeta</title>
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/tabs.css">
-    </head>
-    <body>  
-        <main>
-            <div id="progressbar"></div>
-            <div id="scrollpath"></div>
-            <div id="percent"></div>
-            <section id="landing-page">
-                <div class="nav-slider ">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChopBeta</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!-- font awesome js -->
+    <script src="js/all.js"></script>
+    <style>
+        
+        </style>
+</head>
+<body>
+
+
+    <div class="container-fluid info p-3" id="top-icons">
+        <div class="row">
+            <div class="col d-flex justify-content-between aligh-item-baseline flex-wrap">
+                <div class="info-icons p-2 footer">
+                    <img src="img/chopbeta5.png" class="logo" alt="">
+                    <a href="#" class="mr-2 primary-color"><i class="fab fa-facebook fa-2x"></i></a>
+                     <a href="#" class="mr-2 primary-color"><i class="fab fa-twitter fa-2x"></i></a> 
+                    <a href="#" class="mr-2 primary-color"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="mr-2 primary-color"><i class="fab fa-yelp fa-2x"></i></a> 
                 </div>
-                <header class="title-background">
+                <h5 class="primary-color p-2 heading"><em>...there is no love sincerer than the love of food</em></h5>
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <div class="row height-90 align-items-center justify-content-center">
+                <div class="col">
+                    <div class="banner text-center">
+                        <h1 class="display-1 text-capitalize w-50 mx-auto">
+                            <strong>ChopBeta</strong>
+                        </h1>
+                        <a href="order.html" class="btn main-btn sushi-btn my-4 text-capitalize">order online</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#special-items" class="btn header-link primary-color">
+            <i class="fas fa-arrow-down"></i>
+        </a>
+    </header>
+
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand text-uppercase primary-color">ChopBeta</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <div class="toggler-btn">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+
+        </button>
+        <!-- links -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a href="party.html" class="nav-link text-capitalize">party-pack</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link text-capitalize">menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link text-capitalize">reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link text-capitalize">contact</a>
+                </li>
+            </ul>
+            <form action="" class="form-inline d-none d-lg-block mr-5">
+                <a href="order.html"><button class="btn nav-btn text-capitalize" type="button">order online</button></a>
+            </form>
+        </div>
+    </nav>
+    <!-- menu items -->
+    <section class="py-5" id="special-items">
+        <div class="container py-5">
+            <div class="row parent-container">
+                <!-- menu items -->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3" >
+                    <div class="items-container">
+                        <img src="img/jollof.jpg" alt="" class="img-fluid img-thumbnail item-img">
+                        <a href="img/jollof.jpg">
+                        <h1 class="text-uppercase text-center item-link px-7">menu item</h1>
+                        </a>
+                    </div>
+                </div>
+                 <!-- menu items -->
+                 <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3" >
+                    <div class="items-container">
+                        <img src="img/grills.jpg" alt="" class="img-fluid img-thumbnail item-img">
+                        <a href="img/grills.jpg">
+                        <h1 class="text-uppercase text-center item-link px-7">menu item</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3" >
+                    <div class="items-container">
+                        <img src="img/trays.jpg" alt="" class="img-fluid img-thumbnail item-img">
+                        <a href="img/trays.jpg">
+                        <h1 class="text-uppercase text-center item-link px-7">menu item</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3" >
+                    <div class="items-container">
+                        <img src="img/soup.jpg" alt="" class="img-fluid img-thumbnail item-img">
+                        <a href="img/soup.jpg">
+                        <h1 class="text-uppercase text-center item-link px-7">menu item</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3" >
+                    <div class="items-container">
+                        <img src="img/egusi.jpg" alt="" class="img-fluid img-thumbnail item-img">
+                        <a href="img/egusi.jpg">
+                        <h1 class="text-uppercase text-center item-link px-7">menu item</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3" >
+                    <div class="items-container">
+                        <img src="img/efo riro.jpg" alt="" class="img-fluid img-thumbnail item-img">
+                        <a href="img/efo riro.jpg">
+                        <h1 class="text-uppercase text-center item-link px-7">menu item</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- menu section -->
+    <section id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- title -->
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="primary-color text-uppercase">
+                                Meals
+                        </h1>
+                    </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                            <h3 class="special-text text-capitalize">ChopBeta</h3>
+                        </div>
+                    </div>
+
+                    <!-- title -->
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="primary-color text-uppercase">
+                                Grills
+                        </h1>
+                    </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                            <h3 class="special-text text-capitalize">ChopBeta</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="primary-color text-uppercase">
+                                trays
+                        </h1>
+                    </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                            <h3 class="special-text text-capitalize">ChopBeta</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col my-6">
+                    <!-- title -->
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="primary-color text-uppercase">
+                                soups
+                        </h1>
+                    </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                            <h3 class="special-text text-capitalize">ChopBeta</h3>
+                        </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                            
+                        </div>
+                    </div>
                     
-                    <h2 class="title">ChopBeta</h2>
-                    <img src="./images/chopbeta5.png" alt="ChopBeta logo" class="logo">
-                    
-                </header>
-                <!-- <video autoplay muted loop id="myVideo">
-                    <source src="back.mp4" type="video/mp4">
-                  </video> -->
-            </section>
 
-            <section class="nav-slider-section">
-                <button class="close-nav-slider">X</button>
-                 <section class="nav-links-container">
-                     <ul>
-                         <li><a class="nav-links" href="#menu">Menu</a></li>
-                         <li><a class="nav-links" href="party.html">Party Pack</a></li>
-                         <li><a class="nav-links" href="#restaurant-info">Restaurant Information</a></li>
-                     </ul>
-                 </section>
-            </section>
+                    <!-- title -->
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="primary-color text-uppercase">
+                                bakes
+                        </h1>
+                    </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                            <h3 class="special-text text-capitalize">ChopBeta</h3>
+                        </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="primary-color text-uppercase">
+                                sides
+                        </h1>
+                    </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 special">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                            <h3 class="special-text text-capitalize">ChopBeta</h3>
+                        </div>
+                    </div>
+                    <!-- single item -->
+                    <div class="single-item d-flex justify-content-between my-3 p-3 ">
+                        <div>
+                            <h2 class="text-uppercase text-dark">sides</h2>
+                        <h4 class="text-muted">Lorem ipsum dolor sit amet.
+                        </h4>
+                        </div>
+                        <div class="single-item-text">
+                            <div class="single-item-price align-self-end">
+                                <h1 class="text-uppercase text-dark">$10</h1>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <section id="menu">
-                <h2 class="menu-title">Menu</h2>
-                <section class="tabs-container">
-                    <section class="tabs">
-                        <button class="tabHeader active-tab" data-tab= "1">Meals</button>
-                        <button class="tabHeader" data-tab= "2">Grills</button>
-                        <button class="tabHeader" data-tab= "3">Sides</button>
-                        <button class="tabHeader" data-tab= "4">Soup</button>
-                        <button class="tabHeader" data-tab= "5">Trays</button>
-                        <button class="tabHeader" data-tab= "6">Bakes</button>
-                    </section>
-                    <section id="tabSection-1" class="tabSection show-tab">
-                        <a href="fried.html"><p>1. Fried Rice<span class="menu-price"></span></p></a>
-                        <a href="jollof.html"><p>2. Jollof Rice<span class="menu-price"></span></p></a>
-                    </section>
-                    <section id="tabSection-2" class="tabSection hide-tab">
-                        <a href="chicken.html"><p>1. Grilled Chicken<span class="menu-price"></span></p></a>
-                        <a href="gfish.html"><p>2. Grilled Fish<span class="menu-price"></span></p></a>
-                    </section>
-                        
+    <!-- #####about### -->
 
-                    <section id="tabSection-3" class="tabSection hide-tab">
-                        <a href="salad.html"><p>1. Salad<span class="menu-price"></span></p></a>
-                        <a href="moinmoin.html"><p>2. Moinmoin<span class="menu-price"></span></p></a>
-                        <a href="fries.html"><p>3. French Fries<span class="menu-price"></span></p></a>
-                        <a href="plantain.html"><p>4. Plantain<span class="menu-price"></span></p></a>
-                        <a href="sausage.html"><p>5. Sausage<span class="menu-price"></span></p></a>
-                    </section>
-                        
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-4">
+                    <h1 class="text-uppercase display-3 about">
+                        about us
+                    </h1>
+                    <h2 class="text-muted " id="about">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                         Delectus, eveniet! Perferendis eius, 
+                         tempore quod dolorum sapiente cupiditate minus repellat? Ullam!
+                    </h2>
+                    <!-- <a href="" class="btn main-btn my-4 text-capitalize"></a> -->
+                </div>
+                <div class="col-md-6 about-pictures my-4 d-none d-lg-block">
+                    <img src="img/efo riro.jpg" alt="" class="img-1 img-thumbnail about-image">
+                    <img src="img/egusi.jpg" alt="" class="img-2 img-thumbnail about-image">
+                    <img src="img/moinmoin.jpg" alt="" class="img-3 img-thumbnail about-image">
+                    <img src="img/tray2.jpg" alt="" class="img-4 img-thumbnail about-image">
+                    <img src="img/cake.jpg" alt="" class="img-5 img-thumbnail about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about -->
 
-                    <section id="tabSection-4" class="tabSection hide-tab">
-                        <a href="fish.html"><p>1. Fish Stew<span class="menu-price"></span></p></a>
-                        <a href="turkey.html"><p>2. Turkey Stew<span class="menu-price"></span></p></a>
-                        <a href="beef.html"><p>3. Beef Stew<span class="menu-price"></span></p></a>
-                        <a href="efo.html"><p>4. Efo Riro<span class="menu-price"></span></p></a>
-                        <a href="egusi.html"><p>5. Egusi<span class="menu-price"></span></p></a>
-                    </section>
-                        
+    <!-- reviews -->
+<section id="reviews" class="py-5">
+    <div id="slider" class="carousel slide" data-ride= "carousel">
+        <div class="carousel-inner">
+            <!-- carousel items -->
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                            <!-- image -->
+                            <div class="align-self-center ml-3">
+                                <img src="img/00001.PNG" alt="" class="rounded-circle review-img">
+                            </div>
+                            <!-- text -->
+                            <div class="review-text px-5">
+                                <h2 class="text-capitalize mb-3 primary-color">customer name</h2>
+                            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aut!</p>
+                            </div>
 
-                    <section id="tabSection-5" class="tabSection hide-tab">
-                        <a href="breakfast.html"><p>1. Breakfast Tray<span class="menu-price"></span></p></a>
-                        <a href="launch.html"><p>2. Launch Tray<span class="menu-price"></span></p></a>
-                        <a href="dinner.html"><p>3. Dinner Tray<span class="menu-price"></span></p></a>
-                    </section>
-                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+            <!-- end of carousel -->
+            <!-- carousel items -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                            <!-- image -->
+                            <div class="align-self-center ml-3">
+                                <img src="img/00001.PNG" alt="" class="rounded-circle review-img">
+                            </div>
+                            <!-- text -->
+                            <div class="review-text px-5">
+                                <h2 class="text-capitalize mb-3 primary-color">customer name</h2>
+                            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aut!</p>
+                            </div>
 
-                    <section id="tabSection-6" class="tabSection hide-tab">
-                        <a href="cake.html"><p>1. Cakes<span class="menu-price"></span></p></a>
-                        <a href="bread.html"><p>2. Bread<span class="menu-price"></span></p></a>
-                       <a href="pie.html"> <p>3. Pie<span class="menu-price"></span></p></a>
-                    </section>
-                       
-                </section>
-            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+            <!-- end of carousel -->
+            <!-- carousel items -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <div class="col lg-10 mx-auto d-flex justify-content-between review-item py-3">
+                            <!-- image -->
+                            <div class="align-self-center ml-3">
+                                <img src="img/00001.PNG" alt="" class="rounded-circle review-img">
+                            </div>
+                            <!-- text -->
+                            <div class="review-text px-5">
+                                <h2 class="text-capitalize mb-3 primary-color">customer name</h2>
+                            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, aut!</p>
+                            </div>
 
-            <section id="restaurant-info">
-                <section class="info-container">
-                    <section class="address-content">
-                        <h2 class="restaurant-info-title">Address</h2>
-                        <p class="address">Balogun, Oke Odo</p>
-                        <p class="address">Ilorin, Kwara state</p>
-                    </section>
-                    <section class="business-hours">
-                        <h2 class="restaurant-info-title">Bussiness Hours</h2>
-                        <p class="hours">
-                            Monday-Friday: 9am-3pm
-                        </p>
-                       
-                            <p class="hours">
-                                Saturday-Sunday: 5pm-12am
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    
+            <!-- end of carousel -->
+
+
+
+        <!-- carousel controls -->
+        
+        <a href="#slider" class="carousel-control-prev" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a href="#slider" class="carousel-control-next" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    </div>
+    </div>
+
+</section>
+    
+    <!-- end of reviews -->
+     <!-- contact -->
+     <section id="contact">
+        <div  class="address d-flex">
+            <div class="container ">
+                <div class="row">
+                    <div class="col lg-10 mx-auto d-flex justify-content-between py-3"> 
+                        <div class="bdr">
+                            <h2 id="bdr">Address</h2>
+                            <p>Balogun, Oke Odo</p>
+                            <p>Ilorin, Kwara state</p>
+                        </div>
+                        <div class="bdr">
+                            <h2 id="bdr">Bussiness Hours</h2>
+                            <p>
+                                Monday-Friday: 9am-3pm
                             </p>
-                        
-                    </section>
-                    <section class="contact-content ">
-                        <h2 class="restaurant-info-title">Pick up</h2>
-                        <p class="phone">Call Us: +234-706-640-0032</p>
-                    </section>
-                </section>
-               
-            </section>
-            <footer class="footer">
-               <i class="fa fa-copyright" aria-hidden="true"></i> THE LazyJoker
-            </footer>
-        </main>
-        <script src="index.js"></script>
-        <script src="tabs.js"></script>
-        <!-- <script type="text/javascript">
-            var percent =document.getElementById("progressbar");
-            var percent =document.getElementById("percent");
-           var totalHeight = document.body.scrollHeight = window.innerHeight;
-           window.onscroll = function(){
-               var progress = (window.pageYOffset / totalHeight) * 100;
-               progressbar.style.height = progress + "%";
-            //    percent.innerHTML = "Page Scrolled " + Math.round(progress)+ "%";
-           } 
-            
-        </script> -->
-    </body>
+                           
+                                <p>
+                                    Saturday-Sunday: 5pm-12am
+                                </p>
+                        </div>
+                        <div >
+                            <h2 id="bdr">Pick up</h2>
+                        <p>Call Us: +234-706-640-0032</p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- social icons -->
+    <div class="container-fluid info p-3 footer">
+        <div class="row">
+            <div class="col d-flex justify-content-between align-items-baseline flex-wrap">
+                <!-- <h2 class="primary-color p-2 text-capitalize">THE LazyJoker</h2> -->
+                
+                <h2 class="primary-color p-1 text-capitalize">&copy;copyright2020 </h2>
+                
+                <div class="info-icons p-2">
+                    <a href="#" class="mr-2 primary-color">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="#" class="mr-2 primary-color">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="#" class="mr-2 primary-color">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                    <a href="#" class="mr-2 primary-color">
+                        <i class="fab fa-yelp fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#top-icons" id="back-to-top" class="p-1">
+        <i class="fas fa-arrow-up primary-color fa-3x"></i>
+    </a>
+    <!-- end social icons -->
+
+   
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- bootstap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ripples -->
+    <script src="js/jquery.ripples-min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+</body>
 </html>
